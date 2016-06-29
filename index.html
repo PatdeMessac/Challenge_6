@@ -5,7 +5,16 @@
         <title>Cooki Clicker</title>
     </head>
     <body>
-       <img src="cookie.png" alt="cookiiiiii" id="boutton"/>
+       <img src="cookie.png" alt="cookiiiiii" id="boutton" onclick="clicker()"/>
         <div id="affichage">0</div>
+        
+        <script>
+            function clicker(){
+                var element = document.getElementById("affichage")
+                var compteur = element.innerHTML;
+                compteur++;
+                element.innerHTML=compteur;
+            };
+        </script>
     </body>
 </html>

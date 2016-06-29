@@ -1,1 +1,36 @@
-/*body*/
+.container-fluid{
+	width : 100%
+	height: 1000px;
+	
+	}
+
+body{
+	width : 100%
+	height: 1000px;
+	background-color: grey;}
+
+.cookie{
+	width : 100%;
+	height: 300px;
+	background-color: fuchsia;
+}
+
+.compteur{
+	text-align: center;
+	padding-top : 50px;
+	width : 50%;
+	height: 100px;
+	background-color: lime;
+}
+
+	.affichage {
+		width : 5%;
+		height: 15px;
+		background-color:red;
+		}
+
+.troisieme{
+	width : 25%;
+	height: 600px;
+	background-color : cyan;
+}

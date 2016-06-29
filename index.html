@@ -1,18 +1,51 @@
 <!DOCTYPE html>
 
 <html lang=fr>
+
 <head>
-	<meta charset="utf-8"/>
+    <meta charset="utf-8" />
     <title>Cooki Clicker</title>
-	<link rel="stylesheet" type="text/css" href="text.css">
-	<link rel="stylesheet" type="text/css" href="Bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
 </head>
 
-        
 
-    <body>
-       <img src="cookie.png" alt="cookiiiiii" id="boutton"/>
-        <div id="affichage">0</div>
-    </body>
+
+<body>
+	<div class="container-fluid">
+		<div class ="row">
+			<div class ="col-md-4 col-xs-12">
+				<div class="cookie">
+		    		<img src="images/cookie.png" alt="cookiiiiii" id="boutton" onclick="clicker()" />
+				</div>
+			</div>
+			<div class ="col-md-4 col-xs-12">
+				<div class ="compteur">
+		    		<div id="affichage">0</div>
+
+				    <script>
+				         function clicker() {
+				            var element = document.getElementById("affichage");
+				            var compteur = element.innerHTML;
+				            compteur++;
+				            element.innerHTML = compteur;
+				        };
+				    </script>
+	    		</div>
+			</div>
+			<div class ="col-md-4 col-xs-12">
+				<div class = "troisieme">
+					<p>3D rendered by Mopi & Pat & Associates, 2016 </p>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript"></script>
+	</div>
+</body>
+
 </html>
 
+    Status API Training Shop Blog About 
+
+
+       

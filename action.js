@@ -1,7 +1,7 @@
 var element = document.getElementById("affichage");
 var compteur = parseInt(element.innerHTML);
 var multi = parseInt(document.getElementById("multiplicateur").innerHTML);
-
+var prix = parseInt(document.getElementById("cout").innerHTML);
 
 function clicker() {
         compteur += multi;
@@ -9,14 +9,16 @@ function clicker() {
 };
 
 function incrementer() {
-	if (compteur >= 50) {
+	if (compteur >= prix) {
 		multi ++;
-		compteur -= 50;
+		compteur -= prix;
+		prix *= 2;
 		element.innerHTML=compteur;
 		document.getElementById("multiplicateur").innerHTML=multi;
+		document.getElementById("cout").innerHTML=prix;
 	}
 	else {
-		alert("Vous devez avoir un score d'au moins 50 pour acheter le multiplicateur !!!!");
+		alert("Vous devez avoir un score d'au moins " + prix + " pour acheter le multiplicateur !!!!");
 	}
 };
 

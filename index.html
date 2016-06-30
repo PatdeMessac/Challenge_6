@@ -14,37 +14,32 @@
 	<div class="container-fluid">
 		<div class ="row">
 			<div class ="col-md-4 col-xs-12">
-				<div class="cookie">
-		    			<img src="images/cookie.png" alt="cookiiiiii" id="boutton" onclick="clicker()" />
+				<div id="bouton">
+		    			<img src="images/cookie.png" alt="cookiiiiii" id="bouton" onclick="clicker()" />
 				</div>
 			</div>
 
 
 			<div class ="col-md-4 col-xs-12">
 				<div class ="compteur">
-<<<<<<< HEAD
 		    		<div id="affichage">0</div>
 
 				    <script>
 				         function clicker() {
-				            var element = document.getElementById("affichage");
-				            var compteur = element.innerHTML;
-				            compteur ++;
+				            var bouton = document.getElementById("affichage");
+				            var affichage = bouton.innerHTML;
+				            affichage ++;
 				            element.innerHTML = compteur;
 				        }
 				    </script>
-
-
-
-
-
 	    		</div>
-=======
-		    			<div id="affichage">0</div>
-					<button type="button" class="btn btn-default">Multiplicateur</button>
-	    			</div>
->>>>>>> 7fde75890e19d1464ad5398394bbdd2606c6f8e3
-			</div>
+
+
+		    	<div id="affichage_Multi">1</div>
+					<button id="multiplicateur" type="button" class="btn btn-default">Multiplicateur</button>
+	    	
+
+	    	</div>
 
 
 

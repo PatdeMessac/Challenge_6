@@ -3,35 +3,26 @@
 <html lang=fr>
 
 <head>
-    <meta charset="utf-8" />
-    <title>Cooki Clicker</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="utf-8" />
+	<title>Cooki Clicker</title>
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
 </head>
-
-
 
 <body>
 	<div class="container-fluid">
 		<div class ="row">
 			<div class ="col-md-4 col-xs-12">
 				<div class="cookie">
-		    		<img src="images/cookie.png" alt="cookiiiiii" id="boutton" onclick="clicker()" />
+		    			<img src="images/cookie.png" alt="cookiiiiii" id="boutton" onclick="clicker()" />
 				</div>
 			</div>
 			<div class ="col-md-4 col-xs-12">
 				<div class ="compteur">
-		    		<div id="affichage">0</div>
-
-				    <script>
-				         function clicker() {
-				            var element = document.getElementById("affichage");
-				            var compteur = element.innerHTML;
-				            compteur++;
-				            element.innerHTML = compteur;
-				        };
-				    </script>
-	    		</div>
+		    			<div id="affichage">0</div>
+					<button type="button" class="btn btn-default">Multiplicateur</button>
+	    			</div>
 			</div>
 			<div class ="col-md-4 col-xs-12">
 				<div class = "troisieme">
@@ -39,8 +30,10 @@
 				</div>
 			</div>
 		</div>
-		<script type="text/javascript"></script>
 	</div>
+
+
+<script src="action.js"></script>
 </body>
 
 </html>

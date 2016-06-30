@@ -1,0 +1,31 @@
+<!--exemple d'incrementation-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Exemple</title>
+	
+</head>
+
+
+<body>
+<script language="javascript">
+	var valeur=0;
+	function modifier(increment) {
+	valeur += increment;
+	document.getElementById('text').value=valeur;
+	}
+</script>
+
+
+	<div style="text-align:center">
+	
+	<img src="images/cookie.png" style="background-image : url=('images/cookie.png')"<" value="1" onClick="modifier(1)"> 
+	<input type="text" id="text" value="500" size="3" readonly="true" style="background-color:#FFFFFF; border:#FFFFFF none 0px; text-align:center; font-size:30px"> 
+	<input type="button" value="+1000" onClick="modifier(1000)">
+	<input type="button" value="RAZ" onClick="modifier(-valeur)">
+	</div>
+
+
+</body>
+</html>
+<!--Validé XHTML 1.1-->

@@ -6,11 +6,11 @@ var price_auto = 20;
 //fonction clicker basique : ajoute 1 + le multiplicateur au score quand on clique sur le cookie
 function clicker() {
         counter += multi;
-        document.getElementById("affichage").innerHTML=counter;
+	print(counter, multi, price, price_auto);
 };
 
 //fonction qui incremente le compteur, baisse le score
-function incrementer() {
+function increment() {
 
 	//si on a un score assez élévé
 	if (counter >= price) {
@@ -18,9 +18,7 @@ function incrementer() {
 		counter -= price;
 		price *= 2;
 		//affiche les changements
-		document.getElementById("affichage").innerHTML=counter;
-		document.getElementById("multiplicateur").innerHTML=multi;
-		document.getElementById("cout").innerHTML=price;
+		print(counter, multi, price, price_auto);
 	}
 	else {
 		alert("Vous devez avoir un score d'au moins " + price + " acheter pour le multiplicateur !!!!");
@@ -34,14 +32,19 @@ function autoclick() {
 	//si on a un score assez élévé
 	if (counter >= price_auto) {
 		click = setInterval(clicker, 1000);
-		counter -= prix_auto;
+		counter -= price_auto;
 		price_auto *= 2;
 		//affiche les changements
-		document.getElementById("affichage").innerHTML=counter;
-		document.getElementById("cout_auto").innerHTML=price_auto;
+		print(counter, multi, price, price_auto);
 	}
 	else {
 		alert("shoo");
 	}
 };
 
+function print(counter, muli, price, price_auto) {
+	document.getElementById("affichage").innerHTML=counter;
+	document.getElementById("multiplicateur").innerHTML=multi;
+	document.getElementById("cout").innerHTML=price;
+	document.getElementById("cout_auto").innerHTML=price_auto;
+};
